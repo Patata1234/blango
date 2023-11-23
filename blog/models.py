@@ -1,7 +1,9 @@
 from django.db import models
 from django.conf import settings
-from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
-from django.contrib.contenttypes.models import ContentType
+                                              #Permite a un modelo tener una relacion con cualquier otro modelo de la aplicaicon
+from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation #Relaciones polimorficas entre modelos
+                                              #Almacena unformacion sobre los modelos en la aplicacion
+from django.contrib.contenttypes.models import ContentType #Relaciones polimorficas entre modelos 
 
 
 # Create your models here.
